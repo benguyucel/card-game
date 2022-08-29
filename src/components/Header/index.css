@@ -1,11 +1,11 @@
-.header{
-    top: 20px;
+.header {
+    top: 0;
     position: sticky;
     z-index: 999;
-    height: 85px;
-    background-color: #a29bfe;
+    height: 60px;
+    background-color: #fd79a8;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,3 +14,26 @@
     justify-content: space-between;
     padding: 0 30px;
 }
+.button{
+    color: #fff;
+    padding: 7px 10px;
+    background-color: #e84393;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.score {
+
+    font-size: 15px;
+}
+
+.level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.levelButton:first-child{margin-right: 5px;}

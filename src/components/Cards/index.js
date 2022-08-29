@@ -32,11 +32,20 @@ function Cards() {
             }
         }
 
-    }, [selectCard,dispatch])
+    }, [selectCard, dispatch])
     return (
         <div className='card-content'>
-            {cards.map(card => (
-                <Card key={nanoid()} card={card} onClick={() => handleClick(card)} />
+            {cards.map((card, idx) => (
+                <div key={idx} className={`card ${!card.status ? "active" : ""}`} onClick={() => handleClick(card)}>
+                    <div className="back">
+                        <div className="emoji">
+                            {card.item}
+                        </div>
+                    </div>
+                    <div className="front">
+                        <span className='quesitonmark'>?</span>
+                    </div>
+                </div>
             ))}
         </div>
 

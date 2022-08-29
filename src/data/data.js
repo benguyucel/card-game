@@ -6,8 +6,9 @@ export const newFlag = ["🏳️", "🏴", "🏁", "🚩", "🏳️‍🌈", "�
 export const reCreate = (array, length = 15) => {
     const arr = suffle(array)
     const newArray = [...arr];
-    console.log(newArray)
     newArray.length = length
+    console.log(newArray)
+
     const a = newArray.map(item => ({ id: nanoid(), item, status: false }))
     const b = newArray.map(item => ({ id: nanoid(), item, status: false }))
     return [...a, ...b]
