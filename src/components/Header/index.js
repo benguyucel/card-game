@@ -27,14 +27,7 @@ function Header() {
                 </>
             )}
 
-            <select name="level" onChange={(e) => setLevel(e.target.value)}>
-                <option value="30">Easy</option>
-                <option value="15">Medium</option>
-                <option value="7">Hard</option>
-                <option value="5">Veteran</option>
-                <option value="4">Expert</option>
-                <option value="1">So Expert :)</option>
-            </select>
+           
         </div>
     )
 }

@@ -21,7 +21,7 @@ export const cardSlice = createSlice({
             state.score = state.score + (action.payload)
         },
         newGame: (state, action) => {
-            const suffled = suffle(state.items);
+            const suffled = suffle(reCreate(newFlag));
             suffled.forEach(item => {
                 item.status = false
             });
