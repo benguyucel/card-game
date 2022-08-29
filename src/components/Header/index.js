@@ -21,8 +21,8 @@ function Header() {
                         <span>Single  card count :{items.length / 2} </span></h2>
                     <button className='button newGameButton' onClick={() => dispatch(newGame())}>new game</button>
                     <div className='level'>
-                        <button className='button levelButton' onClick={() => dispatch(changeLevel(-5))}>Increase CARD</button>
-                        <button className='button levelButton' onClick={() => dispatch(changeLevel(5))}>Decrease CARD</button>
+                        <button className='button levelButton' onClick={() => dispatch(changeLevel(-5))}>Decrease CARD</button>
+                        <button className='button levelButton' onClick={() => dispatch(changeLevel(5))}>Increase CARD</button>
                     </div>
                 </>
             )}
