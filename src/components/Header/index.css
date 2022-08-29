@@ -12,9 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 30px;
 }
-.button{
+
+.button {
     color: #fff;
     padding: 7px 10px;
     background-color: #e84393;
@@ -36,4 +38,18 @@
     justify-content: space-between;
     align-items: center;
 }
-.levelButton:first-child{margin-right: 5px;}
+
+.levelButton:first-child {
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+   .header{
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+   }
+
+}

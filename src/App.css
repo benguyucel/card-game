@@ -1,18 +1,27 @@
-*{
+* {
   box-sizing: border-box;
 }
-body,html{
+
+body,
+html {
   background-color: #dfe6e9;
 }
+
 .App {
   padding-top: 20px;
   width: 100%;
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @font-face {
   font-family: NotoColorEmojiLimited;
   unicode-range: U+1F1E6-1F1FF;
   src: url("/public/font/NotoColorEmoji.ttf") format('truetype');
+}
+@media only screen and (max-width: 600px) {
+  .card-content{
+    justify-content: center;
+  }
+
 }
