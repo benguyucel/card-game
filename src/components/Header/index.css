@@ -2,7 +2,7 @@
     top: 0;
     position: sticky;
     z-index: 999;
-    height: 60px;
+    min-height: 80px;
     background-color: #fd79a8;
     width: 100%;
     margin-bottom: 10px;
@@ -37,6 +37,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .levelButton:first-child {
@@ -44,12 +46,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-   .header{
-    height: auto;
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
-    padding-bottom: 10px;
-   }
+    .header {
+        height: auto;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 
 }
